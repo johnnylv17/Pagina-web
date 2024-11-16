@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tabla Multiplicar</title>
+    <style>
+        /* Estilos para el menú */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #230bab, #9c0909); /* Fondo degradado azul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+body{
+  background-color:rgba(12, 101, 118, 0.91);
+  color: white;
+}
+.titulo{
+  color: rgb(235, 166, 37);
+  text-align: center;
+
+}
+
+.logo, .opciones{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+
+
+}
+.opciones li, .Ejercicios li {
+list-style: none;
+margin: 15px;
+
+
+}
+.opciones li a{
+text-decoration: none;
+color: rgb(242, 234, 9);
+font-weight: bold;
+transition: all 0.10s;
+
+
+}
+
+.opciones li a:hover {
+background-color: rgba(229, 6, 6, 0.551);
+color: white;
+font-size: 17px;
+padding: 3px;
+}
+
+
+
+
+#bienvenido {
+  font-size: 18px;
+  color:black;
+  text-align: center;
+  text-transform: uppercase;
+ 
+}
+.encabezado{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:8px;
+  list-style-type: none;
+}
+.formContainer{
+  
+            background-color: #fff;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+ }
+label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+}
+input[type="text"], input[type="number"], select, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #f7e3e3;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+textarea{
+  color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="logo">
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a> </li>
+        </ul>
+        </ul>
+      </nav>
+    </header >
+    <main>
+      
+      <section>
+        <header>
+            <h2 class="titulo">Tabla de Multiplicar</h2>
+        </header>
+        <article class="formContainer">
+          <form action="../index.html">
+            <div>
+              <label for="tabla">Tabla</label>
+              <input id="tabla" required type="number">
+            </div>
+            <div>
+              <label for="inicio">Valor Inicial</label>
+              <input id="inicio" type="number" required>
+            </div>
+             <div>
+              <label for="final">Valor final</label>
+              <input id="final" type="number" required>
+            </div>
+            <div>
+              <label for="obs">Presenta Tabla</label>
+              <textarea  id="obs"></textarea>
+            </div>
+            <div>
+              <button type="button" onclick="tablas()">Aceptar</button>
+              <button type="submit">ir al home</button>
+              <button type="reset">Limpiar</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <script src="./tabla.js"></script>
+  </body>
+</html>
