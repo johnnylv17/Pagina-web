@@ -1,0 +1,61 @@
+.titulo{
+    color: rgb(235, 166, 37);
+    text-align: center;
+  
+  }
+  
+  .logo, .opciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  
+  
+  }
+  .opciones li, .Ejercicios li {
+  list-style: none;
+  margin: 15px;
+  
+  
+  }
+  .opciones li a{
+  text-decoration: none;
+  color: rgb(242, 234, 9);
+  font-weight: bold;
+  transition: all 0.10s;
+  
+  
+  }
+  
+  .opciones li a:hover {
+  background-color: rgba(229, 6, 6, 0.551);
+  color: white;
+  font-size: 17px;
+  padding: 3px;
+  }
+  
+  
+  #bienvenido {
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    text-transform: uppercase;
+   
+  }
+  .encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+ }
+ .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:8px;
+    list-style-type: none;
+  }
